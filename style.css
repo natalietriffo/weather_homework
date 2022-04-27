@@ -1,0 +1,35 @@
+header{
+    margin-bottom: 0;
+}
+
+.icon-1,
+.icon-2,
+.icon-3,
+.icon-4,
+.icon-5{
+    width: 25%;
+    height: auto;
+}
+
+.forecast{
+    color: black;
+    background-color:tan;
+    ;
+}
+
+
+
+#uvIndex{
+    padding: 8px;
+}
+
+.weather5day{
+    align-self: center;
+}
+
+@media (min-width: 576px) { 
+    .searchContainer,
+    .main{
+        margin-bottom: 5rem;
+    }
+}

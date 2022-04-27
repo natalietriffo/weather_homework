@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 6:Weather Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="row">
+        <div class="col-sm-12 jumbotron mb-0">
+            <header class="text-center display-4">Homework 6: Weather Dashboard</header>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" style="height: 25rem;">
+            <div class="col-sm-4 col-md-4 panel panel-default " style="background-color: #eee;">
+                <div class="panel-body">
+                    <div class="container searchContainer  mb-2">
+                        <label class="h5" for="citySearch">Type a city name</label>
+                        <div class="input-group mb-3" style="width: 80%;">
+                            <input type="text" class="form-control col-md-9 mb-2" aria-label="City Searching" id="citySearch">
+                            <div class="input-group-append col-md-3 mb-2">
+                              <button class="btn btn-outline-secondary" type="button" id="submitSearch">Search</button>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 95%;">
+                            <ul class="list-group list-group-flush" id="searchHistory">
+                            </ul>
+                            <button type="button" id="eraseHistory" class="btn btn-danger btn-sm btn-block">Clear Cities</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8 col-md-8">
+                <div class="row">
+                    <div class="card mx-auto my-1 main" style="width: 98%;">
+                        <div class="card-body">
+                            <p class="h4" id="cityNameDay">City name</p>
+                            <p>Temperature: <span id="temperature"></span></p>
+                            <p>Humidity: <span id="humidity"></span></p>
+                            <p>Wind Speed: <span id="windSpeed"></span></p>
+                            <p>UV Index: <span id="uvIndex"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <section class="container col-lg-12">
+                        <p class="h2">Forecast for the next 5 days:</p>
+                        <div class="card-deck">
+                            <div class="forecast card h-100 text-center pt-2">
+                                <p class="date-1 h6"></p>
+                                <img class="icon-1 weather5day">
+                                <p class="temp-1"></p>
+                                <p class="humidity-1"></p>
+                            </div>
+                            <div class="forecast card h-100 text-center pt-2">
+                                <p class="date-2 h6"></p>
+                                <img class="icon-2 weather5day">
+                                <p class="temp-2"></p>
+                                <p class="humidity-2"></p>
+                            </div>
+                            <div class="forecast card h-100 text-center pt-2">
+                                <p class="date-3 h6"></p>
+                                <img class="icon-3 weather5day">
+                                <p class="temp-3"></p>
+                                <p class="humidity-3"></p>
+                            </div>
+                            <div class="forecast card h-100 text-center pt-2">
+                                <p class="date-4 h6"></p>
+                                <img class="icon-4 weather5day">
+                                <p class="temp-4"></p>
+                                <p class="humidity-4"></p>
+                            </div>
+                            <div class="forecast card h-100 text-center pt-2">
+                                <p class="date-5 h6"></p>
+                                <img class="icon-5 weather5day">
+                                <p class="temp-5"></p>
+                                <p class="humidity-5"></p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">Weater Dashboard</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
